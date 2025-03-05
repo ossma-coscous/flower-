@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Delivery NYC</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-section">
+        <h1>Flower Delivery NYC</h1>
+        <p>
+          Vivamus arcu felis bibendum ut tristique et. Habitant morbi tristique
+          senectus et netus et malesuada fames. Sapien eget mi proin sed libero
+          enim sed.
+        </p>
+        <p>Image from <a href="https://www.freepik.com">Freepik</a></p>
+        <button class="learn-more-btn">LEARN MORE</button>
+      </div>
+      <div class="right-content">
+        <div class="swiper-container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-image">
+                  <img
+                    src="https://assets.nicepagecdn.com/d2cc3eaa/6245512/images/child-holding-roses_23-214769432.jpg"
+                    alt="Bouquet"
+                  />
+                </div>
+                <div class="slider-content">
+                  <h2>Sweet Bouquet</h2>
+                  <p class="price">
+                    <span class="old-price">$150.00</span>
+                    <span class="new-price">$120.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-image">
+                  <img
+                    src="https://assets.nicepagecdn.com/d2cc3eaa/6245512/images/top-view-bouquet-flowers-with-blank-card_23-2149024547.jpg"
+                    alt="Bouquet"
+                  />
+                </div>
+                <div class="slider-content">
+                  <h2>Rose Bouquet</h2>
+                  <p class="price">
+                    <span class="old-price">$130.00</span>
+                    <span class="new-price">$110.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-image">
+                  <img
+                    src="https://assets.nicepagecdn.com/d2cc3eaa/6245512/images/bouquet-orange-tulips-female-hands-interior-room-closeup_169016-28300.jpg"
+                    alt="Bouquet"
+                  />
+                </div>
+                <div class="slider-content">
+                  <h2>Elegant Bouquet</h2>
+                  <p class="price">
+                    <span class="old-price">$170.00</span>
+                    <span class="new-price">$140.00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Navigation Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          clickable: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
